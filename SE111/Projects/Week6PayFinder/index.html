@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = "David punchak" content = "Pay calculator">
+    <title>W6 | Pay calculator</title>
+</head>
+<body>
+    <a href = "../index.html">Project Hub</a>
+    <!--This is for getting the users name at the start-->
+    <script>
+        //asking for your first name
+        var firstName = prompt("What is your first name?");
+        //getting the body
+        var theH1Tag = document.querySelector("body");
+        //making the h1 element
+        var welcomeName = document.createElement("h1");
+        //having the text what i want displayed
+        welcomeName.innerHTML = `Welcome ${firstName}`;
+        //Adding the text to the webpage
+        theH1Tag.appendChild(welcomeName);
+    </script>
+    <!--^^^^The Output from the script^^^^^-->
+    <!--Out of the script-->
+    <p>To find your Gross Pay Click The Button</p>
+    <!--This is just the button to call the function-->
+    <button>Find Gross pay</button>
+    <!--The script for getting the gross pay, and doing the math for it-->
+    <script>
+        
+
+        var mathPromptButton = document.querySelector("button");
+        mathPromptButton.addEventListener('click', doingMath);
+
+        function doingMath(){
+            //casting it as a number when i get the user prompt
+            var hoursWorked = Number(prompt(`How many hours do you work a week ${firstName}?`));
+            var hourPay = Number(prompt(`How much do you make an hour ${firstName}?`));
+            //The tax rate and week pay are given values so no input 
+            var taxRate = .2;
+            var twoWeekPeriod = 2;
+            //just defening the vars so they can be used
+            var grossPay = 0;
+            var taxAmount = 0;
+            var netPay = 0; 
+
+            grossPay = hoursWorked * hourPay * twoWeekPeriod;
+            taxAmount = grossPay * taxRate;
+            netPay = grossPay - taxAmount;
+            //rounding tax so it is not a huge number with a lot of 0's
+            taxAmount = Math.round(taxAmount);
+            netPay = Math.round(netPay);
+
+            //This is for the 3 displays 
+            console.log(`Your Gross pay would be $${grossPay}.`);
+            console.log(`You are losing $${taxAmount} to uncle sam.`);
+            console.log(`So your total net pay is $${netPay}.`);
+            //for the Same display window because it looks better
+            console.log(`Your Gross pay would be $${grossPay}. \nYou are losing $${taxAmount} to uncle sam.\nSo your total net pay is $${netPay}.`);
+            //having it prompt alert the user to there pays
+            alert(`Your Gross pay would be $${grossPay}. \nYou are losing $${taxAmount} to uncle sam.\nSo your total net pay is $${netPay}.`);
+
+        }
+    </script>
+    <!--Out of script-->
+    <!--Final display for the user-->
+    <p>After you have found your gross pay click the button to find another</p>
+</body>
+</html>
