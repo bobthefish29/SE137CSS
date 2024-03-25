@@ -19,17 +19,36 @@
         <a href="#">Link1</a>
         <a href="#">Link1</a>
     </div>
-    <div>Div 1</div>
-    <div>Div 2</div>
-    <div>Div 3</div>
+    <div class="section">Div 1</div>
+    <div class="section hide">Div 2</div>
+    <div class="section hide">Div 3</div>
     <!--THe #Nav would be all the a tags in the nav div-->
+
     <script>
-        var a = document.querySelectorAll('#nav a')
+        //using the Array.from is using the items that it gets than makes it into a real list
+        var a = Array.from(document.querySelectorAll('#nav a'));
+        var div = document.querySelectorAll('.section');
 
-        a[0].addEventListener(`click`, handler);
+        for(let i = 0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, handler);
 
-        function handler(){
-            
+        }
+        //e.target is going to be the value of a[i]
+        function handler(e)
+        {
+
+            e.preventDefault();
+
+            for(let i = 0; i < a.length; i++)
+            {
+                div[i].classList.add(`hide`);
+            }
+
+            div[a.indexOf(e.target)].classList.remove(`hide`);
+           
+
+
         }
     </script>
 
