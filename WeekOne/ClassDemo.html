@@ -10,7 +10,7 @@
             display:none;
         }
     </style>
-
+    <a href="../index.html">Home Page</a>
 
 </head>
 <body>
@@ -25,9 +25,12 @@
     <!--THe #Nav would be all the a tags in the nav div-->
 
     <script>
+        //this is where i am setting the vars
         //using the Array.from is using the items that it gets than makes it into a real list
         var a = Array.from(document.querySelectorAll('#nav a'));
         var div = document.querySelectorAll('.section');
+
+        
 
         for(let i = 0; i<a.length; i++)
         {
@@ -37,18 +40,16 @@
         //e.target is going to be the value of a[i]
         function handler(e)
         {
-
+            //this just stops the links from being links
             e.preventDefault();
-
+            // this is setting the divs to hidd
             for(let i = 0; i < a.length; i++)
             {
                 div[i].classList.add(`hide`);
+                
             }
-
+            // this just removes the hide from the item clicked
             div[a.indexOf(e.target)].classList.remove(`hide`);
-           
-
-
         }
     </script>
 
