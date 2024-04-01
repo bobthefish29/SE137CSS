@@ -1,0 +1,43 @@
+body{
+    background-color: #aaaaaa;
+}
+/* Making a class for hide, it just hides the item with that class */
+.hide{
+    display:none;
+}
+/* This is for the images */
+img{
+    width: 400px;
+    height: 500px;
+    border: gold solid 3px;
+}
+/* This is just the styling for the family guy image */
+.FamilyImage{
+    border: solid;
+    border-color: black;
+    width: 500px;
+    height: 500px;
+}
+/* The Styling for the h1 tags */
+h1{
+    color: #cc4e2b;
+}
+
+/* The styles for the h2 tag */
+h2{
+    color: #e0702b ;
+}
+/* All the styles for the links */
+a:link{
+    color: #cc4e2b;
+}
+
+a:visited{
+    color: #cc4e2b;
+}
+a:hover{
+    color: salmon;
+}
+a:active{
+    color:black;
+}

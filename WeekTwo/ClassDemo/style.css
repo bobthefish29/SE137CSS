@@ -1,0 +1,167 @@
+/* This is needed, it can work with out it but it is needed for "Real coding" */
+
+@charset "UTF-8";
+
+/* @import url() */
+
+/* Example for just div: this would be used last */
+div{
+    color:pink;
+
+
+}
+/* example of using a class: this would be used after the id*/
+.orange{
+    color: orange;
+
+
+}
+/* Example of using id: this is what it would look at first*/
+#bob{
+
+    color:red;
+
+}
+/* this is a way to do the very spefic item in a b tag: doing it for class */
+#bob b{
+    color:green;
+}
+/* this is taking the .orange with b tag */
+/* if you do the "div.orange b" would be every div with class 'orange' in the b tag*/
+.orange b{ 
+
+    color:green;
+}
+
+/* this would be better for syle that would not change */
+a{
+    /*color:brown;*/
+}
+
+/* this is for all the type of links */
+/*
+a:link{
+    color:green;
+}
+
+a:visited{
+    color:black;
+}
+a:hover{
+    color:pink;
+}
+a:active{
+    color:white;
+}
+*/
+
+/* this would work for the ones that are going to be the same */
+a:link, a:visited{
+
+    color:pink;
+}
+
+a:hover, a:active{
+    color:orange;
+
+}
+/* this is for the spefic atratubute, like if i wanted text, but it could also just be input */
+input[type ="text"]{
+    background-color: orange;
+}
+
+/* h1::before or after{
+    content:"-----";
+ } */
+
+
+/* 
+    html,body{
+        height:100%;
+        height:700%
+    }
+
+
+*/
+
+body{
+    /* just the color of the background */
+    background-color: pink;
+    /* this is just the opacity
+    background-image:url() ;
+    background-size: 20%; */
+    /*
+    This is setting an background, can use a relative or absulute path
+    background-image: url("paper.gif");
+    background-repeat:(no-)repeat(x/y);
+    background-positiun(-x/-y):(left) center(top/bottem) or 100px 100px ;
+    border:1px solid black;
+
+    backgound-attatachment:(static) fixed;
+
+
+    or 
+
+
+    background: 1px solid black fixed url() 20% etc
+    */
+    
+    border:1px solid black;
+    /* or */
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+
+    border-top-color:orange;
+    border-top-width: 5px;
+    /*
+    just for making it a cerial the 50 is the top left and bottem right 20 is the other, it goes clockwises
+    border-radius: 50px 20px 10px 5px;
+    */
+
+    /* 
+    This is adding a showow 5px left and 10 px down, 20px of fettering and color blue
+    box-shadow: 5px 10px 20px blue; 
+
+    there is the same with text-shadow
+
+    or text shadown gen
+    */
+}
+/*
+p{
+    font-style: (itali)c;
+
+    font-variant(small-caps)
+
+    font-weight (bold)
+
+    font-size (font size
+
+    line-height(lines between the text)
+
+    font-family(type of font)"more than one word", oneWord
+
+
+
+}
+
+google fonts
+
+@font-face{
+    font-family: myFirstFont;
+    src:-------------------
+
+
+text-deceration for underline or nun
+
+text-align (aligns text veritaly centers just the text
+
+(not really used)
+word-spacing(the spacing between words)
+letter-spacing(spacing the letters between eachother)
+text-trainsform(to make the font upercase )
+
+*/
+
+
