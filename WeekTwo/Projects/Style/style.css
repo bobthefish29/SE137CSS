@@ -1,43 +1,108 @@
-body{
-    background-color: #aaaaaa;
-}
-/* Making a class for hide, it just hides the item with that class */
+/* The styles for the page*/
+/* This is the imports */
+@charset "UTF-8";
+
+
+
+/* This is for the java, to have the abilty to hide the sections */
 .hide{
     display:none;
 }
-/* This is for the images */
+
+
+/* #########----------Start of the main styles----------######## */
+
+body{
+    background-color: #bababa;
+}
+
+#footer{
+    border-top: 5px solid salmon;
+}
+
+
+/* ##########---This is the headings------######## */
+h1{ 
+    color: #cc4e2b;
+    height: 70px;
+    font-size: 50px;
+    text-align: center;
+    border-bottom:5px solid salmon ;
+}
+/* Heading 2 */
+h2{
+    text-align: center;
+    color: #cc4e2b ;
+    font-size:40px;
+}
+
+
+/* ###########------This is the nav section----###### */
+#nav{
+
+    text-align: center;
+    border-bottom: 5px solid salmon;
+    height: 70px;
+
+}
+/* The buttons */
+.navButton{
+    font-size: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid salmon;
+    background-color:#cacaca;
+
+}
+
+
+
+
+
+
+/* #######-------This is for the images-----###### */
 img{
     width: 400px;
     height: 500px;
-    border: gold solid 3px;
+    border: #cc4e2b solid 3px;
+    
+    
 }
+
 /* This is just the styling for the family guy image */
 .FamilyImage{
     border: solid;
-    border-color: black;
+    border-color: #cc4e2b;
     width: 500px;
     height: 500px;
 }
-/* The Styling for the h1 tags */
-h1{
-    color: #cc4e2b;
+/* just to get the images centered */
+.center {
+    display:block;
+    margin-left: auto;
+    margin-right:40%;
+    width: 20%;
+    height: 10%;
 }
 
-/* The styles for the h2 tag */
-h2{
-    color: #e0702b ;
-}
-/* All the styles for the links */
-a:link{
+/* #####----All the styles for the links----###### */
+a:link, a:visited{
     color: #cc4e2b;
 }
-
-a:visited{
-    color: #cc4e2b;
-}
-a:hover{
+a:hover, a:active{
     color: salmon;
 }
-a:active{
-    color:black;
+
+
+
+#bioText{
+    width:300px;
+    height:300px;
+    /* border: 3px solid black; */
+    padding: 20px;
+    color: black;
+    float: right;
+    margin-right:10%;
+
+
 }
