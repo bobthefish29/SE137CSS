@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- THis is the needed information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Punchak | Bio Page</title>
+
+
+    <!-- Just linking to the CSS sheet -->
+    <link rel="stylesheet" href="Style/style.css">
+
+    
+</head>
+<body>
+    <!-- This is the heading -->
+    <h1>David Punchak</h1>
+    
+    <!-- This is for the nav bar -->
+    <div id="nav">
+        <a href = "#" class="navButton">Bio</a>
+        <a href = "#" class="navButton">Education</a>
+        <a href = "#" class="navButton">Hobbies</a>
+    </div>
+    
+    <!-- THis is the main content -->
+    <div id="main">
+        <!-- THis is for the bio section -->
+        <div id="bio" class="section">
+            <h2>My Bio</h2>
+
+            <p id = "bioText">Hello, my name is <em>David Punchak.</em> Im 19 years old. I live at my parants house still, hoping to get my own in a few years. I have a brother and 2 cats. My cats are named <strong> Piper and Casper</strong> <u>(Casper is in the photo)</u>. I work at stop and shop near my house. One day I hope I can traval the world and explore everything i can. There are many thing i would like to see in this world, the Grand Canyon, the Great Wall of China, the Great Barrier Reef, Etc. I would love a computer job where i can <i>"Stay at home"</i> but really travel. I Like programing but im still very new to the whole thing, i took some class in highschool but that was it. I had a internship at a computer repair store but we never programed just hardware repair. </p>
+
+            <div id="imageOfMe">
+                <img src="Images/IMG_7669.PNG" alt="Photo of myself" class="center">
+            </div>
+            <!-- <p class = "bioText">Hello, my name is <em>David Punchak.</em> Im 19 years old. I live at my parants house still, hoping to get my own in a few years. I have a brother and 2 cats. My cats are named <strong> Piper and Casper</strong> <u>(Casper is in the photo)</u>. I work at stop and shop near my house. One day I hope I can traval the world and explore everything i can. There are many thing i would like to see in this world, the Grand Canyon, the Great Wall of China, the Great Barrier Reef, Etc. I would love a computer job where i can <i>"Stay at home"</i> but really travel. I Like programing but im still very new to the whole thing, i took some class in highschool but that was it. I had a internship at a computer repair store but we never programed just hardware repair. </p> -->
+            
+        </div>
+        <!-- THis is where the education section goes -->
+        <div id="ed" class="section hide">
+            <h2>Education</h2>
+            <ul>
+                <li>North Smithfield Elementary School | k-2</li>
+                <li>Halliwell Memorial School | 3-5</li>
+                <li>North Smithfield Middle School | 6-8</li>
+                <li>North Smithfield High School | 9-12</li>
+                <li>NEIT | College</li>
+            </ul>
+        </div>
+        <!-- This is the hobbies section -->
+        <div id="hobbies" class="section hide">
+            <h2>Hobbies</h2>
+            <ol>
+                <li>I like family guy (Seen all seasons at least 3 times)</li>
+                <li>Video games</li>
+                <li>Watching the stars</li>
+                <li>I dont really do much </li>
+            </ol>
+            <img class="FamilyImage" src="Images/FamilyGuy.jpg" alt="Photo of Family Guy">
+
+        </div>
+    </div>
+    <!-- This is the footer -->
+    <div id="footer">
+        <p>&copy;2020 David Punchak | W1 Assignment</p>
+        <!-- I like having one place that is linked to all the projects i have, i did it with my HTML class,  -->
+    <br>
+    <a href="../../index.html">Home Page</a>
+    </div>
+
+    <!-- this is the javascrip for the website -->
+    <script>
+        //this is where i am setting the vars
+        //using the Array.from is using the items that it gets than makes it into a real list
+        var link = Array.from(document.querySelectorAll("#nav a"))
+        var div = document.querySelectorAll('.section');
+
+        //this is just adding the event lissener to each item in the link list than if that one is clicked it runs the clicked function
+        for(let i = 0; i<link.length; i++)
+        {
+            
+            link[i].addEventListener(`click`, clicked );
+
+        }
+        //the fucntion for clicked
+        function clicked(e){
+            
+
+            //this just stops the links from being links
+            e.preventDefault();
+            // this is setting the divs to hide
+            for(let i = 0; i < link.length; i++)
+            {
+                div[i].classList.add(`hide`);
+            }
+            // this just removes the hide from the item clicked
+            div[link.indexOf(e.target)].classList.remove(`hide`);
+        }
+
+
+    </script>
+
+</body>
+</html>
