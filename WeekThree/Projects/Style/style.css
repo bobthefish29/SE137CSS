@@ -11,4 +11,237 @@
     display:none;
 }
 
+html{
+    background-color: #eac3ae;
 
+}
+
+
+main{
+
+    position: relative;
+    margin:auto;
+
+
+    background-color: #eac3ae;
+    display:grid;
+    grid-template-areas:
+    "noHead noHead noHead"
+    "bio bio bio"
+    "funAddict funAddict school "
+    "feet feet feet";
+
+}
+
+header{
+    background-color: #fa8072;
+    grid-area: noHead;
+
+    border-bottom: 20px solid #eac3ae;
+
+    margin-left: 50px;
+    margin-right: 50px;
+
+
+
+
+}
+
+header h1{
+    background-color: #cf7359;
+
+    margin-left: 50px;
+    margin-right: 50px;
+
+    text-align: center;
+    color: white;
+    font-size: 48px;
+
+
+}
+
+#bio{
+    background-color: #cf7359;
+    grid-area: bio;
+    
+
+    display:grid;
+    grid-template-areas:
+    "top top"
+    "text text";
+
+
+    color:white;
+
+}
+
+#bio h2{
+    background-color: #fa8072;
+
+    grid-area:top;
+
+    margin-left: 50px;
+    margin-right: 89%;
+
+    margin-top: 5px;
+    margin-bottom: 0px;
+
+    font-size: 48px;
+    text-align: center;
+
+    padding-bottom: 0px;
+
+
+
+}
+
+#bio p{
+    grid-area:text;
+
+    background-color: #fa8072;
+    padding-top: 0px;
+    padding: 40px;
+
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+
+    font-size: 18px;
+
+
+
+
+
+
+
+}
+
+
+#funAddict{
+    grid-area: funAddict;
+
+
+    background-image: url("../Images/istockphoto-1440976287-170667a.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    border: 1px solid black ;
+
+    margin-left: 10px;
+
+    color: white;
+
+
+}
+
+#funAddict h2{
+    background-color: #fa8072;
+
+    margin-right: 70% ;
+    margin-left: 30px;
+
+    font-size: 48px;
+    text-align: center;
+
+}
+
+#funAddict li{
+    
+    margin-left:20px;
+
+
+    font-size: 48px;
+}
+
+
+
+
+
+
+#school{
+    background-color: #CF7359;
+    grid-area: school;
+
+    border: 1px solid black ;
+
+    margin-right:10px;
+
+    color: white;
+
+}
+
+
+#school h2{
+    background-color: #fa8072;
+
+    align-items: center;
+
+    margin-left: 30% ;
+    margin-right: 30%;
+
+
+    box-shadow: 5px 5px;
+    font-size: 48px;
+    text-align: center;
+
+}
+
+#school li{
+
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+
+
+
+
+footer{
+    grid-area: feet;
+    background-color: #CF7359;
+    border-top: 30px solid #EAC3AE;;
+
+    display:grid;
+
+    grid-template-areas:
+    "text link";
+
+
+    color:white;
+
+    margin-left: 70px;
+    margin-right: 70px;
+
+
+
+}
+
+
+footer p {
+    grid-area:text;
+
+    font-size: 24px;
+
+    margin: 2px;
+    padding:2px;
+}
+
+footer a{
+    grid-area:link;
+
+    background-color:#fa8072;
+    border: 2px solid black;
+
+    margin: 2px 2px 2px 70%;
+
+    
+
+
+
+    font-size: 24px;
+    text-align: center;
+
+
+    color:white;
+}
