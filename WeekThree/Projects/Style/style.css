@@ -14,7 +14,9 @@
 
 
 
-/* I really dont know how to make the backgrounds on the titals change when you move the page around, it works for the heading but nothing elses */
+/* I really dont know how to make the backgrounds on the titals change when you move the page around, it works for the heading but nothing elses 
+
+also just learned the font is different the link i got is not the correct font, its not 100% to the prototype but its the best i can do with out googling everything*/
 
 
 
@@ -105,6 +107,7 @@ header h1{
     margin-top: 5px;
     margin-bottom: 0px;
 
+    
     font-family: "sourcesanspro";
     font-style: normal;
     font-weight: 400;
