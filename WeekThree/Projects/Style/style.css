@@ -3,6 +3,18 @@
 @charset "UTF-8";
 
 
+@font-face {
+    font-family: 'sourcesanspro';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(https://design.penpot.app/fonts/sourcesanspro-regular.woff) format('woff');
+}
+
+
+
+
+/* I really dont know how to make the backgrounds on the titals change when you move the page around, it works for the heading but nothing elses */
 
 
 
@@ -13,6 +25,7 @@
 
 html{
     background-color: #eac3ae;
+    
 
 }
 
@@ -30,6 +43,7 @@ main{
     "bio bio bio"
     "funAddict funAddict school "
     "feet feet feet";
+
 
 }
 
@@ -54,9 +68,14 @@ header h1{
     margin-right: 50px;
 
     text-align: center;
+
+    font-family: "sourcesanspro";
+    font-style: normal;
+    font-weight: 400;
     color: white;
     font-size: 48px;
 
+    box-shadow: 5px 5px 20px black;
 
 }
 
@@ -86,12 +105,15 @@ header h1{
     margin-top: 5px;
     margin-bottom: 0px;
 
+    font-family: "sourcesanspro";
+    font-style: normal;
+    font-weight: 400;
     font-size: 48px;
     text-align: center;
 
     padding-bottom: 0px;
 
-
+    box-shadow: 5px 5px 20px black;
 
 }
 
@@ -106,7 +128,9 @@ header h1{
     margin-left: 20px;
     margin-right: 20px;
 
-
+    font-family: "sourcesanspro";
+    font-style: normal;
+    font-weight: 400;
     font-size: 18px;
 
 
@@ -141,6 +165,9 @@ header h1{
     margin-right: 70% ;
     margin-left: 30px;
 
+    font-family: "sourcesanspro";
+    font-style: normal;
+    font-weight: 400;
     font-size: 48px;
     text-align: center;
 
@@ -150,7 +177,9 @@ header h1{
     
     margin-left:20px;
 
-
+    font-family: "sourcesanspro";
+    font-style: normal;
+    font-weight: 400;
     font-size: 48px;
 }
 
@@ -181,7 +210,11 @@ header h1{
     margin-right: 30%;
 
 
-    box-shadow: 5px 5px;
+    box-shadow: 5px 5px 20px black;
+
+    font-family: "sourcesanspro";
+    font-style: normal;
+    font-weight: 400;
     font-size: 48px;
     text-align: center;
 
@@ -189,8 +222,13 @@ header h1{
 
 #school li{
 
-    font-size: 15px;
     margin-bottom: 13px;
+
+    font-family: "sourcesanspro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
 }
 
 
@@ -200,8 +238,8 @@ header h1{
 footer{
     grid-area: feet;
     background-color: #CF7359;
-    border-top: 30px solid #EAC3AE;;
-
+    border-top: 20px solid #EAC3AE;
+    border-bottom: 20px solid #EAC3AE;
     display:grid;
 
     grid-template-areas:
@@ -221,6 +259,9 @@ footer{
 footer p {
     grid-area:text;
 
+    font-family: "sourcesanspro";
+    font-style: normal;
+    font-weight: 400;
     font-size: 24px;
 
     margin: 2px;
@@ -238,7 +279,9 @@ footer a{
     
 
 
-
+    font-family: "sourcesanspro";
+    font-style: normal;
+    font-weight: 400;
     font-size: 24px;
     text-align: center;
 
