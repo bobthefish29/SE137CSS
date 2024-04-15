@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+html{}
+
+body{
+    display:flex;
+    margin:0;
+
+
+    /* width:1820px;
+    height:1080px; */
+
+}
+main{
+    display:grid;
+    grid-template-areas:
+    "noHead noHead noHead"
+    "img img welcome"
+    "buy banner welcome "
+    "feet feet feet";
+
+    border: 2px solid black ;
+    background-color: rgb(40, 40, 40);
+    
+    width:1820px;
+    /* height:1080px; */
+
+}
+
+header{
+    grid-area: noHead;
+    border: 2px solid gold ;
+    background-color:black;
+    display: flex;
+    
+    color: rgb(187, 9, 8);
+    height:100px;
+
+}
+
+#bigImage{
+    grid-area: img;
+    border: 2px solid gold ;
+
+    background-image: url("f13_images/banner.png");
+    background-repeat: no-repeat;
+
+    padding-right: 0;
+    margin-right: 0;
+
+    display:flex;
+
+    /* align-items: center;
+    justify-content: center; */
+
+
+    
+    /* height:388px; */
+    /* width:1440px; */
+
+
+}
+
+/* ####################Buy Movie sectionm######################## */
+
+#buyMovie{
+    grid-area: buy;
+    border: 2px solid black ;
+
+    height:482.5px;
+
+    display:flex;
+
+    
+
+
+}
+
+#buyArticle{
+    display:flex;
+}
+
+#fridayText{
+    display:flex;
+}
+
+#buyParagraph{
+    display:flex;
+}
+
+
+#imageFlex{
+
+    display:flex;
+}
+
+
+
+
+/* ############################################ */
+
+
+#campBanner{
+    grid-area: banner;
+    border: 2px solid black ;
+
+    height:481px;
+
+}
+
+#welcomeCamp{
+    grid-area: welcome;
+    border: 2px solid black ;
+
+    margin-left: 20px;
+    padding-left:10px;
+
+    height:918px;
+    /* width:360px; */
+}
+
+footer{
+    grid-area: feet;
+    border: 2px solid black ;
+
+    /* width:1820px; */
+    height: 60px;
+}

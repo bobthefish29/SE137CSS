@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+html{
+    height:100%;
+}
+body{
+    height:100%;
+    margin:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color:orange;
+    border: 2px solid black;
+    padding:20px;
+
+    height: 50%;
+
+    /* overflow: scroll; */
+    /* anything that is over will just be a scroll wheel or hidden */
+
+
+
+    display:flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    /* used for the location up center down */
+    /* strech is the whole item */
+    align-items: stretch;
+    /* align-content: center; */
+    flex-wrap: wrap;
+
+    width: 80%;
+
+}
+div{
+    background-color: red;
+    /* height: 200px; */
+    width:500px;
+    border: 2px solid black;
+}
