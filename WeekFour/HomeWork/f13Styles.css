@@ -1,14 +1,19 @@
 @charset "UTF-8";
 
-html{}
+html{
+    height: 100%;
+}
 
 body{
     display:flex;
     margin:0;
 
+    flex-shrink: 1;
 
-    /* width:1820px;
-    height:1080px; */
+
+    /* width:1820px; */
+
+    /* height:100%; */
 
 }
 main{
@@ -78,6 +83,9 @@ header{
 
 #buyArticle{
     display:flex;
+
+    width: 310px;
+    height: 478px;
 }
 
 #fridayText{
@@ -94,7 +102,10 @@ header{
     display:flex;
 }
 
-
+#imageSize{
+    height:148px;
+    width:117px;
+}
 
 
 /* ############################################ */
@@ -105,8 +116,22 @@ header{
     border: 2px solid black ;
 
     height:481px;
+    width: 700px ;
+
+    display: flex;
+    flex-direction: column;
 
 }
+
+#posterImg{
+    
+    width: 641px;
+    
+}
+
+
+
+
 
 #welcomeCamp{
     grid-area: welcome;
@@ -117,7 +142,27 @@ header{
 
     height:918px;
     /* width:360px; */
+
+    display: flex;
 }
+
+#WelcomeSign{
+    height: 50px;
+    width: 50px;
+
+}
+
+
+
+#jason{
+    height: 50px;
+    width: 50px;
+
+}
+
+
+
+
 
 footer{
     grid-area: feet;
