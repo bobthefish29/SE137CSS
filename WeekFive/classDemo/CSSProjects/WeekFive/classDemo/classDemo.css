@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+main{
+    width:600px;
+    height:600px;
+    background-color: yellow;
+
+    position: relative; 
+    top: 100px;
+    /* left: 100px; */
+    /*the it works is like q4 from graphing */
+    /* bottom: 100px; */
+
+    
+
+
+
+}
+
+#one{
+    width: 200px;
+    height:200px;
+    background-color: red;
+    
+    /* There is sticky where it sticks to the top of the page */
+    /* Also fixed to have it stay where it is forever */
+    position: absolute;
+
+
+    z-index: 1;
+    left: 100px;
+    top:100px;
+    /* top: 100px; */
+    /* bottom: 0px;
+    right:0px; */
+
+    /* transform: translate(-100px); */
+    /* transform: rotate(40deg); */
+}
+
+#two{
+    width: 200px;
+    height:200px;
+    background-color: blue;
+    z-index: 0;
+}
