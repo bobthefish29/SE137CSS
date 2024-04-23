@@ -1,14 +1,16 @@
 @charset "UTF-8";
 
 
-
-
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&family=Teko:wght@300..700&display=swap');
 /* Still Got very little idea how to do it but i can use the width's that he set on the pixso */
 
 
 
 html{
     height: 100%;
+    width:1820px;
+    margin:0;
 }
 
 body{
@@ -17,7 +19,7 @@ body{
 
     margin:0;
     height: 100%;
-    /* width:1820px; */
+    width:1820px;
 
     /* flex-shrink: 1; */
 
@@ -54,8 +56,7 @@ main{
 
 header{
     grid-area: noHead;
-    border: 2px solid gold ;
-    background-color:black;
+    background-color:rgb(7, 7, 7);
     
     color: rgb(187, 9, 8);
 
@@ -66,10 +67,10 @@ header{
 
     /* align-items: baseline; */
     
-
+    width:1820px;
 
     /* display: flex; */
-    /* height:100px; */
+    height:100px;
     
 
 }
@@ -79,6 +80,12 @@ header h1{
     
     margin-left: 20px;
     align-items: first baseline;
+
+    font-size:48px;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     
 
 }
@@ -89,33 +96,27 @@ header div{
 }
 
 header div i {
-    
     align-items: center;
     font-size: 60px;
-    
-    
-    /* justify-content: center; */
-    /* width: fit-content;
-    height: fit-content; */
 }
 
 
 
-
+/* ##############3The big immage background item############## */
 
 
 #bigImage{
     grid-area: img;
     border: 2px solid orange ;
 
-    width: 100%;
-    max-height: 100%;
+    width: 1440;
+    height: 388px;
 
     background-image: url("f13_images/banner.png");
     background-repeat: no-repeat;
 
     background-size: 100%, auto;
-    background-position-y:-50px ;
+    background-position-y:-72px ;
 
     
 
@@ -143,39 +144,106 @@ header div i {
 
 #buyMovie{
     grid-area: buy;
-    border: 2px solid black ;
+    border-top: 5px solid rgb(187, 9, 8) ;
+    background-color: rgb(57,57,57);
     display:flex;
-
+    width: 700px;
+    height:481px;
     margin: 15px 10px 10px 15px;
 
-
-    
 }
 
+#justForSpacing{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: space-evenly;
+}
 #buyPoster{
-    max-width: 100%;
-    max-height: auto;
+    
+    width: 310px;
+    height: 478px;
     
 }
 
 #fridayText{
-    display:flex;
+    width: 333px;
+    height: 77px;
+    border-bottom: 4px solid red;
+    color:rgb(255, 29, 41);
+
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
 }
 
 #buyParagraph{
-    display:flex;
+    
+    width: 349px;
+    height: 216px;
+    padding-top: 20px;
+
+
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 #imageFlex{
+    
 
     display:flex;
+    width: 331px;
+    height: 158px;
+
+    justify-content: space-between;
+
+
 }
 
 #imageSize{
-    /* height:148px;
-    width:117px; */
+    height:148px;
+    width:117px;
 }
+
+#withInImageFlex{
+    width: 191px;
+    height: 157px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+}
+
+#amazon{
+    color: rgb(34, 193, 203);
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#price p{
+    padding:0;
+    margin:0;
+    width:180px ;
+    height:77px;
+    color:white;
+    border-bottom:4px solid white;
+    font-size: 72px;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
 
 
 /* ############################################ */
@@ -183,38 +251,58 @@ header div i {
 
 #campBanner{
     grid-area: banner;
-    border: 2px solid black ;
+    border-top:5px solid rgb(187, 9, 8);
+    background-color: rgb(57, 57, 57);
 
     
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    
+    justify-content: center;
+    align-items: center;
     
     
     
 
-    margin: 15px 10px 10px 15px;
+    margin: 15px 0px 10px 15px;
     
 
     
 
-    /* height:481px; */
+    height:481px;
     width: 700px ;
+    
 
 }
 
 #posterImg{
-    border:2px solid white ;
-    max-width: 100%;
-    height: 100%;
+    
+    width: 641px;
+    height: 229px;
+    
+    /* justify-content: center;
+    align-items: center; */
     
     
 }
 
+#campBanner article{
+    width: 676px;
+    height: 195px;
+
+}
+
 #campBanner article p{
-    border:2px solid white ;
-    max-width: 100%;
-    height: 100%;
+    color: white ;
+    font-size: 24px;
+    width: 676px;
+    height: 195px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
     
 }
 
@@ -224,15 +312,20 @@ header div i {
 
 #welcomeCamp{
     grid-area: welcome;
-    border: 2px solid black ;
+    /* border: 2px solid black ; */
     display: flex;
+    background-color: rgb(57,57,57);
 
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 15px;
 
-    margin-left: 20px;
+    width: 360px;
+    height: 918px;
 
 
-
+    font-size: 18px;
     
 
     /* margin-left: 20px;
@@ -244,19 +337,45 @@ header div i {
     /* display: flex; */
 }
 
-#WelcomeSign{
-    max-width: 70%;
-    
+#welcomeCamp article{
+    width: 277px;
+    height: 385px;
+    color: white;
     
 
 }
 
+#red{
+    color:rgb(252, 3, 3);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 
+#realRed{
+    color:rgb(255, 29, 41);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
-#jason{
+#veryRed{
+    color:rgb(255, 29, 41);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#WelcomeSign{
+    width: 325px ;
+    height:254px ;
     align-items: center;
 
-    max-width: 70%;
+}
+#jason{
+    align-items: center;
+    width: 325px;
+    height:170.52px;
 
 }
 
@@ -266,10 +385,25 @@ header div i {
 
 footer{
     grid-area: feet;
-    border: 2px solid black ;
+    background-color: rgb(7, 7, 7);
+    
 
     
 
-    /* width:1820px; */
-    /* height: 60px; */
+    width:1820px;
+    height: 60px;
+}
+
+footer p {
+    color: rgb(188, 188, 188);
+    font-size: 12px ;
+    padding-left: 20px;
+    padding-top: 10px;
+    /* this is for teko font */
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+
 }
