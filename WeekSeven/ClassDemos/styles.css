@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+html{
+    height:100%;
+    font-size: 16px;
+}
+body{
+    height:100%;
+    margin: 0;
+}
+main{
+    height:100%;
+    display: flex;
+    padding:20px;
+    box-sizing: border-box;
+}
+
+div{
+    /* vw and vh are based on the whole window its self, they are persentages of there parant */
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+}
+
+div:nth-child(1) span{
+    /* em look at the parant element, rem look at the root size */
+    font-size: 4rem;
+}
+/* if it is more than 801px than it would be the othere display */
+@media screen and (min-width:801px)
+{
+    
+    div{
+        transition: background-color 1s;
+    }
+    div:nth-child(1){
+        background:red;
+    }
+    div:nth-child(2){
+        background:green;
+    }
+    div:nth-child(3){
+        background:blue;
+    }
+
+}
+
+/* if it is less than 800px than they will be gray with a margin */
+@media screen and (max-width: 800px)
+{
+
+    html{
+        font-size: 32px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    div{
+        background-color: gray;
+        margin-bottom: 20px;
+        transition: background-color 1s;
+        /* font-size: 64px; */
+    }
+
+    div span
+    {
+        /* font-size: 128px; */
+    }
+
+}
