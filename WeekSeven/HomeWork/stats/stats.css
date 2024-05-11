@@ -1,15 +1,19 @@
 html, body{
     margin:0;
     height:100vh;
+    background-color: rgb(128, 128, 128);
 }
 body{
     display:flex;
     flex-direction: column;
     align-items: center;
+    
+    
 }
 table{
     width:80%;
     border-collapse: collapse;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 td{
     border-bottom:1px solid black;
@@ -19,11 +23,30 @@ td{
 
 
 
+thead{
+    background-color: rgb(255, 235, 205);
+    color:rgb(222,184,135);
 
+}
 
+h1{
+    font-size: 32px;
+    background-color: white;
 
-
-
+}
+thead tr:first-child{
+    /* display: contents; */
+    font-size: 1.5em;
+    
+}
+thead tr:last-child{
+    display: none;
+    font-size: 16px;
+    
+}
+tbody tr{
+    font-size: 16px;
+}
 
 
 
@@ -31,15 +54,18 @@ td{
     h1{
         font-size: 1.5em;
     }
-
-
     thead tr:first-child{
         display: contents;
         font-size: 1em;
     }
     thead tr:last-child{
         display: none;
+        
+    }
+
+    tbody tr{
         font-size: 1em;
+        
     }
 
 }
@@ -59,14 +85,13 @@ td{
     }
     thead tr:last-child{
         display:contents;
+        font-size: 1em;
         
     }
 
-    .stats{
-        display:none;
+    tbody tr{
+        font-size: 1em;
     }
-
-
 
 }
 
@@ -84,13 +109,16 @@ td{
     }
     thead tr:last-child{
         display:contents;
+        font-size: 1.5em;
     }
 
-    .stats{
+    .stat{
         display:none;
     }
 
-
+    tbody tr{
+        font-size: 1.25em;
+    }
 
 
 } 
