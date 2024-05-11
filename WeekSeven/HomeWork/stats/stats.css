@@ -11,6 +11,83 @@ table{
     width:80%;
     border-collapse: collapse;
 }
- td{
+td{
     border-bottom:1px solid black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1920px){
+    h1{
+        font-size: 1.5em;
+    }
+
+
+    thead tr:first-child{
+        display: contents;
+        font-size: 1em;
+    }
+    thead tr:last-child{
+        display: none;
+        font-size: 1em;
+    }
+
+}
+
+/* NExt media */
+
+@media screen and (max-width:1000px){
+
+    h1{
+        font-size: 1.5em;
+    }
+
+
+    thead tr:first-child{
+        display: none;
+        
+    }
+    thead tr:last-child{
+        display:contents;
+        
+    }
+
+
+
+
+
+}
+
+
+/* next media */
+
+@media screen and (max-width:500px){
+
+    h1{
+        font-size: 2em;
+    }
+
+    thead tr:first-child{
+        display: none;
+    }
+    thead tr:last-child{
+        display:contents;
+    }
+
+    
+
+
+
+
+} 
+

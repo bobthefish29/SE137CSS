@@ -20,10 +20,6 @@ header{
     justify-content: space-between;
     align-items: center;
     color: rgb(227, 227, 227);
-
-    
-    
-    
 }
 
 header div{
@@ -32,7 +28,6 @@ header div{
     width: 100px;
     display: flex;
     justify-content: space-between;
-    
 }
 
 
@@ -52,22 +47,23 @@ aside{
     background-color: #505050;
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
 
     
-
 }
 
-/* aside div{
-    font-size: 30px;
-    
-    
+aside:last-child{
+    align-items: baseline;
+}
 
 
-} */
 aside div {
     cursor: pointer;
     background-color: red;
+    font-size: 20px;
+
 }
+
 
 .tray{
     width: 144px;
@@ -89,6 +85,69 @@ div.tray div{
     width:144px;
     min-width: 144px;
 }
+
+
+
+.nav {
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    float: right; /* Clear floats */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* Bring the nav above everything else--uncomment if needed.
+    position: relative;
+    z-index: 5;
+    */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #program{
     background-color: orange;
     width: 100%;
