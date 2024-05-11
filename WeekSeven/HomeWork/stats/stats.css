@@ -62,7 +62,9 @@ td{
         
     }
 
-
+    .stats{
+        display:none;
+    }
 
 
 
@@ -84,7 +86,9 @@ td{
         display:contents;
     }
 
-    
+    .stats{
+        display:none;
+    }
 
 
 
