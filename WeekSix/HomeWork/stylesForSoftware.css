@@ -12,30 +12,33 @@ main{
     display: flex;
     flex-direction: column;
 }
+
+/* this is the header section */
 header{
     height:23px;
     background-color: #505050;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: rgb(227, 227, 227);
 }
-
 header div{
-    
+
     margin-left:50px ;
     width: 100px;
     display: flex;
     justify-content: space-between;
 }
 
-
-
 header div a  { 
     text-decoration: none; 
     color: rgb(227, 227, 227);
 } 
+
+
+
+
+
 
 section{
     background-color: purple;
@@ -72,7 +75,9 @@ aside div {
     transition: all 1s;
     display:flex;
     justify-content: flex-end;
+    padding:0;
     overflow: hidden;
+    color: white;
 }
 .hide{
     width:0;
@@ -84,22 +89,68 @@ div.tray div{
     border:5px solid green;
     width:144px;
     min-width: 144px;
+    padding: 0;
+
+    
+    
 }
-
-
+.tray div ul{
+    width: 100%;
+    
+    
+    padding: 0;
+    background-color: pink;
+}
 
 .nav {
     list-style: none;
     font-weight: bold;
-    margin-bottom: 10px;
-    float: right; /* Clear floats */
-    width: 100%;
+    
+    float: right; 
+    width: 100%; 
     display: flex;
     flex-direction: column;
-    /* Bring the nav above everything else--uncomment if needed.
-    position: relative;
-    z-index: 5;
-    */
+    
+
+    
+    
+    background-color: red;
+}
+
+.tray div :first-child ul{
+    /* display:flex; */
+    background-color: pink;
+}
+
+.nav details{
+    border-top:1px solid white ;
+    background-color: orange;
+
+    /* justify-content: center; */
+    
+
+    
+    width:100%;
+    height:100%;
+    
+}
+
+.nav details:hover{
+
+    background-color: gray ;
+}
+.nav details summary{
+    padding:10px;
+    border-bottom:1px solid white ;
+}
+
+.nav details li{
+    padding:3px;
+}
+
+details ul{
+    list-style: none;
+    
 }
 
 
@@ -128,23 +179,7 @@ div.tray div{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* VVVVVVVV this is my css, its stuff that i have done VVVVVVVVVV */
 
 
 
@@ -179,6 +214,9 @@ button:last-child
     background-color: #161616;
     height: 23px;
 }
+
+
+/* This is the big terxt arieara */
 textarea{
     height: 100%;
     width: 100%;
@@ -191,6 +229,15 @@ textarea{
     box-sizing: border-box;
     overflow-y: auto;
 }
+
+
+
+
+
+
+
+
+
 footer{
     height:16px;
     background-color: #0254A0;
