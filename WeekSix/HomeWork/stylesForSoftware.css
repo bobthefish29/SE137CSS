@@ -98,7 +98,7 @@ aside i:hover{
 }
 div.tray div{
     box-sizing: border-box;
-    border:5px solid green;
+    
     width:144px;
     min-width: 144px;
     padding: 0;
