@@ -8,11 +8,12 @@ for(let i=0; i<buttons.length; i++){
 //this is the old way of functions
 function butts(e)
 {
+    
     for(let i=0; i<buttons.length; i++){
         buttons[i].classList.remove(`active`);
     }
-    e.target.classList.add(`active`);
-    document.querySelector(`#breadcrumbs`).innerHTML = `<a href ="#">${e.target.innerHTML}</a>`;
+    e.currentTarget.classList.add(`active`);
+    document.querySelector(`#breadcrumbs`).innerHTML = `<a href ="#"> Se 137 > W6 > Homework > ${e.target.children[0].children[1].innerHTML}</a>`;
 
 }
 

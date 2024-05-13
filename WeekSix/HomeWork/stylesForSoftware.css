@@ -20,7 +20,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(227, 227, 227);
+    color: #E3E3E3;
 }
 header div{
 
@@ -29,43 +29,55 @@ header div{
     display: flex;
     justify-content: space-between;
 }
-
 header div a  { 
     text-decoration: none; 
     color: rgb(227, 227, 227);
 } 
-
-
-
-
-
+header div a:hover  { 
+    color: #FFFFFF;
+}
+header span:hover  { 
+    color: #FFFFFF;
+}
 
 section{
     background-color: purple;
     height:100%;
     display: flex;
 }
+
+/* This is the aside section */
 aside{
-    width: 45px;
+    width: 50px;
     background-color: #505050;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-
-    
-}
-
-aside:last-child{
-    align-items: baseline;
+    justify-content: space-between;
 }
 
 
-aside div {
+aside i{
     cursor: pointer;
-    background-color: red;
-    font-size: 20px;
+    width: 100%;
+    height: 32px;
+    /* display: flex;*/
+    justify-content: center; 
+    align-self: center;
+    font-size: 32px;
+    padding-bottom: 20px;
+    padding-left:5px;
+    color: #E3E3E3;
 
 }
+
+aside i:hover{
+    color: #FFFFFF
+}
+
+
+
+
+
 
 
 .tray{
@@ -99,7 +111,7 @@ div.tray div{
     
     
     padding: 0;
-    background-color: pink;
+    
 }
 
 .nav {
@@ -110,21 +122,19 @@ div.tray div{
     width: 100%; 
     display: flex;
     flex-direction: column;
+    margin-block-start: 0;
     
-
-    
-    
-    background-color: red;
 }
 
 .tray div :first-child ul{
     /* display:flex; */
-    background-color: pink;
+    
+    padding: 10px;
 }
 
 .nav details{
     border-top:1px solid white ;
-    background-color: orange;
+    
 
     /* justify-content: center; */
     
@@ -150,6 +160,7 @@ div.tray div{
 
 details ul{
     list-style: none;
+    margin-block-start: 0;
     
 }
 
@@ -162,27 +173,6 @@ details ul{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* VVVVVVVV this is my css, its stuff that i have done VVVVVVVVVV */
-
-
-
 #program{
     background-color: orange;
     width: 100%;
@@ -192,21 +182,56 @@ details ul{
 nav{
     background-color: #060606;
     height: 34px;
-
     display: flex;
+    width: 100%;
 }
-button{
-    width:173px;
+
+/* nav div{
+    width:100%;
     max-width:173px;
     background-color:#373737;
     border:0 solid black;
     margin-right: 2px;
+
     color: white;
+    display: flex;
+    ustify-content: space-between;
+    color: white;
+
 }
-button:last-child
-{
+*/
+nav div:last-child{
     margin: 0;
 }
+
+
+nav button{
+    width: 100%;
+    max-width:173px;
+    border:0 solid black;
+    background-color:#373737;
+    color: #E3E3E3;
+    padding:10px;
+    border: 0;
+    
+
+
+
+
+    display:flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-between;
+
+} 
+
+
+button:hover{
+    color:#FFFFFF;
+}
+
+
+
 .active{
     background-color: #161616;
 }
@@ -214,6 +239,10 @@ button:last-child
     background-color: #161616;
     height: 23px;
 }
+
+
+
+
 
 
 /* This is the big terxt arieara */
@@ -242,4 +271,9 @@ footer{
     height:16px;
     background-color: #0254A0;
     border-top: 1px solid white;
+    display:flex;
+    justify-content: space-between;
+    overflow: hidden;
+    color: white;
+    padding: 2px;
 }
